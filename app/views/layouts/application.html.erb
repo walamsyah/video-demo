@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>VideoDemo</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <!-- Icons-->
+    <link href="/coreui/node_modules/@coreui/icons/css/coreui-icons.min.css" rel="stylesheet">
+    <link href="/coreui/node_modules/flag-icon-css/css/flag-icon.min.css" rel="stylesheet">
+    <link href="/coreui/node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/coreui/node_modules/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+    <!-- Main styles for this application-->
+    <link href="/coreui/css/style.css" rel="stylesheet">
+    <link href="/coreui/vendors/pace-progress/css/pace.min.css" rel="stylesheet">
+  </head>
+  <body class="app header-fixed sidebar-fixed aside-menu-fixed sidebar-lg-show">
+    <%= render "shared/header" %>
+    <div class="app-body">
+      <%= render "shared/sidebar" %>
+      <main class="main">
+        <%= yield %>
+      </main>
+      <%= render "shared/aside" %>
+    </div>
+    <%= render "shared/footer" %>
+    <script src="/coreui/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="/coreui/node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="/coreui/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/coreui/node_modules/pace-progress/pace.min.js"></script>
+    <script src="/coreui/node_modules/perfect-scrollbar/dist/perfect-scrollbar.min.js"></script>
+    <script src="/coreui/node_modules/@coreui/coreui/dist/js/coreui.min.js"></script>
+  </body>
+</html>

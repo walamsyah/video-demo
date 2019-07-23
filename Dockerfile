@@ -17,6 +17,10 @@ RUN mkdir -p $RAILS_ROOT
 # Set working directory, where the commands will be ran:
 WORKDIR $RAILS_ROOT
 
+# Copy the main application.
+COPY . .
+COPY config/database.docker.yml config/database.yml
+
 # Gems:
 # COPY Gemfile Gemfile
 # COPY Gemfile.lock Gemfile.lock
@@ -25,10 +29,6 @@ RUN bundle install --without development test
 
 # Puma
 # COPY config/puma.rb config/puma.rb
-
-# Copy the main application.
-COPY . .
-COPY config/database.docker.yml config/database.yml
 
 RUN bundle exec rake assets:precompile RAILS_ENV=production
     # SECRET_KEY_BASE=xxx \

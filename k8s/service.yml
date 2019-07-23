@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: video-demo-service
+  labels:
+    app: video-demo
+spec:
+  type: LoadBalancer
+  loadBalancerIP: 35.247.160.34
+  ports:
+    - port: 80
+      targetPort: 3000
+      protocol: TCP
+      name: http
+  selector:
+    app: video-demo

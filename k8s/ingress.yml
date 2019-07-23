@@ -1,0 +1,13 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: video-demo-ingress
+  labels:
+    app: video-demo
+  annotations:
+    kubernetes.io/ingress.global-static-ip-name: video-demo-ip
+spec:
+  backend:
+    serviceName: video-demo-service
+    servicePort: http
+  

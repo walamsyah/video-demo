@@ -32,7 +32,7 @@ RUN bundle install --without development test
 # COPY config/puma.rb config/puma.rb
 
 RUN bundle exec rake assets:precompile RAILS_ENV=production \
-    SECRET_KEY_BASE=OXfsz3B1pvdX8H0zE3x1l+yGtJ2mM2eNTXzLbE9Cu9DgwpTAGlnnu+wa9Qb1ZX5/7uoBxQqUBXd9P9UZU60ci/1EVp1TdS57cuh2EtI4m7awV69YF9ZOj2+XJlADQBGW/CC6cATjE4LGKe6OrgUXTSrnlh0QNuKPYTrFuxqfQImHOMMBsr1nS1j4lqu3UtvY+95MnMvx7BYIAeDlcRLO+A6yxkdxZKiAx0/1Utm20wWX3Z46+Zi2xuxuL37T3MGjMeVPCHLDWZD0x3nLd3H2xPnadw/gr1L4jd+2FUR+tYf/vk+0oD7MPn+CJ+PAk5anmi5bIqJuhx4dRyd+45WnGj/vPfLL5XOHRF8F1bmvxB7OCFTPpKtVyoJ23R4Y0kBCjnoOxV0JoMTObN53Fgpj+vDhNxHb/8vj5P6Y--NRugcu3T2ocTAZrC--bLcxAq9XI2c9Bp+4Pvt0jQ==
+    SECRET_KEY_BASE=xxx
     # SLEEKR_ENCRYPTOR_SALT=B2M\xE9t\xC0.G\xFC\xE7\xDD\xEF\xEFCO\v\xF8\xE1{R\x0E\x18\x98\x14{\v?\x9F\xA7\xBC\x87_ \
     # SLEEKR_ENCRYPTOR_SECRET=01eff1f3c77c513bceeb92fb09f089fc \
     # GOOGLE_CLOUD_PROJECT_ID=sleekr-hr-staging \
